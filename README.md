@@ -1,2 +1,10 @@
-# green-earth-plant-shop
-A simple shop for trees and plants with quick add-to-cart.
+## green-earth-plant-shop
+
+Explore trees by category and build your cart in seconds.
+
+##Tech Stack Used:
+- HTML
+- Tailwind CSS + Daisy UI
+- JavaScript
+
+#Visit site: https://mehrab-abir.github.io/green-earth-plant-shop/
