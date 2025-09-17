@@ -215,3 +215,17 @@ const showDetails = (plants) =>{
     `
 }
 
+// responsive menu - menu for mobile device 
+const menuOpenBtn = document.querySelector(".menuOpenBtn");
+const menuCloseBtn = document.getElementById("menuCloseBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuOpenBtn.addEventListener('click',()=>{
+    mobileMenu.classList.remove('-translate-x-full');
+})
+menuCloseBtn.addEventListener('click',()=>{
+    mobileMenu.classList.add('-translate-x-full');
+})
+
+
+
