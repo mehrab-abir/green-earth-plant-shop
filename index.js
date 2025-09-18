@@ -126,9 +126,6 @@ const displayCategoryData = (plants) =>{
             addedToCart.push(newItem);
 
             alert(`${plantName} has been added to cart ☘`);
-
-            itemsCounter = addedToCart.length;
-            numberOfItems.innerText = itemsCounter;
          
             showCartItems(addedToCart);
         })
@@ -158,7 +155,10 @@ const showCartItems = (addedToCart) =>{
 
         document.querySelector('.totalPriceContainer').innerText = totalPrice;
 
-        console.log(addedToCart);
+        itemsCounter = addedToCart.length;
+        numberOfItems.innerText = itemsCounter;
+
+        // console.log(addedToCart);
 }
 
 cart.addEventListener('click',(event)=>{
