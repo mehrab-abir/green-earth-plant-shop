@@ -77,6 +77,8 @@ const plantsContainer = document.getElementById("treeCards");
 
 //add to cart functionality
 let addedToCart = [];
+let itemsCounter = 0;
+let numberOfItems = document.querySelector('.items-counter');
 const cart = document.getElementById("cart");
 
 //display all plants of a specific category
@@ -124,6 +126,9 @@ const displayCategoryData = (plants) =>{
             addedToCart.push(newItem);
 
             alert(`${plantName} has been added to cart ☘`);
+
+            itemsCounter = addedToCart.length;
+            numberOfItems.innerText = itemsCounter;
          
             showCartItems(addedToCart);
         })
@@ -219,12 +224,15 @@ const showDetails = (plants) =>{
 const menuOpenBtn = document.querySelector(".menuOpenBtn");
 const menuCloseBtn = document.getElementById("menuCloseBtn");
 const mobileMenu = document.getElementById("mobileMenu");
+const body = document.querySelector('.body');
 
 menuOpenBtn.addEventListener('click',()=>{
     mobileMenu.classList.remove('-translate-x-full');
+    body.classList.add("overflow-hidden");
 })
 menuCloseBtn.addEventListener('click',()=>{
     mobileMenu.classList.add('-translate-x-full');
+    body.classList.remove("overflow-hidden");
 })
 
 
