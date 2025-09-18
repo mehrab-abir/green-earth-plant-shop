@@ -228,11 +228,11 @@ const body = document.querySelector('.body');
 
 menuOpenBtn.addEventListener('click',()=>{
     mobileMenu.classList.remove('-translate-x-full');
-    body.classList.add("overflow-hidden");
+    // body.classList.add("overflow-hidden");
 })
 menuCloseBtn.addEventListener('click',()=>{
     mobileMenu.classList.add('-translate-x-full');
-    body.classList.remove("overflow-hidden");
+    // body.classList.remove("overflow-hidden");
 })
 
 
