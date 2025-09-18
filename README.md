@@ -6,5 +6,6 @@ Explore trees by category and build your cart in seconds.
 - HTML
 - Tailwind CSS + Daisy UI
 - JavaScript
+- API
 
 ## Visit site: https://mehrab-abir.github.io/green-earth-plant-shop/
